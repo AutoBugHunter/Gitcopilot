@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Accessibility Tools</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+        .tool-logo {
+            width: 100px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Browser Extensions</a>
+            <a href="#">Stand-alone API/Testing</a>
+            <a href="#">Engine Subscription API</a>
+            <a href="#">AIM Report</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Compare Accessibility Tools</h1>
+        <input type="text" id="url" placeholder="Enter URL">
+        <button id="check">Check it</button>
+
+        <section>
+            <h2>List of Accessibility Testing Tools</h2>
+            <div>
+                <img class="tool-logo" src="wave-logo.png" alt="Wave logo">
+                <img class="tool-logo" src="achecker-logo.png" alt="AChecker logo">
+                <img class="tool-logo" src="lighthouse-logo.png" alt="Lighthouse logo">
+            </div>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Accessible Check</th>
+                    <th>Accessibility Tool 1</th>
+                    <th>Accessibility Tool 2</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add rows here -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <a href="https://www.unt.edu/index.html">UNT</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About</a>
+        <a href="#">Terms of Use</a>
+    </footer>
+
+    <script>
+        // Add your JavaScript here
+        document.getElementById('check').addEventListener('click', function() {
+            var url = document.getElementById('url').value;
+            // Implement the functionality to check the accessibility of the provided URL
+        });
+    </script>
+</body>
+</html>
